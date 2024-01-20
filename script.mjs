@@ -6,10 +6,13 @@ const apiKey = "c18ac18f95f5429b80a132952241701";
 
 function fetchWeather() {
     const locationValue = locationInput.value;
-    if (locationValue) {
-        fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${locationValue}&aqi=no`)
-            .then(response => response.json())
-            .then(data => {
+  
+            if (locationValue) {
+                const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${locationValue}&aqi=no`;
+
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
                 const temp = data.current.temp_c;
                  const description = data.current.condition.text;
                 const locationName = data.location.name;

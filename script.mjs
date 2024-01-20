@@ -11,13 +11,13 @@ function fetchWeather() {
             .then(response => response.json())
             .then(data => {
                 const temp = data.current.temp_c;
-                const description = data.current.condition.text;
+                 const description = data.current.condition.text;
                 const locationName = data.location.name;
 
                 weather.innerHTML = `
                     <h2>${locationName}</h2>
-                    <p>${temp}°C - ${description}</p>
-                `;
+                    <p>Temperature ${temp}°C - ${description}</p>
+                  `;
             })
             .catch(error => {
                 console.error("Error fetching weather data:", error);

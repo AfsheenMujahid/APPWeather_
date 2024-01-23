@@ -7,8 +7,7 @@ const apiKey = "c18ac18f95f5429b80a132952241701";
 function fetchWeather() {
     const locationValue = locationInput.value;
      if (locationValue) {
-                const apiUrl = `https://api.weatherapi.com/v1/current.json?key=c18ac18f95f5429b80a132952241701&q=Karachi&aqi=no
-`;
+                const apiUrl = `http://api.weatherapi.com/v1/current.json?key=c18ac18f95f5429b80a132952241701&q=Karachi&aqi=no`;
 
                 fetch(apiUrl)
                     .then(response => response.json())

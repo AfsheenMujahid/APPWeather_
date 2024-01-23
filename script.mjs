@@ -1,7 +1,7 @@
 function fetchWeather() {
     const locationValue = locationInput.value;
     if (locationValue) {
-        const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${locationValue}&aqi=no`;
+        const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${locationValue}&aqi=no`;
 
         fetch(apiUrl)
             .then(response => response.json())

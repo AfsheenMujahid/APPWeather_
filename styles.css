@@ -1,20 +1,26 @@
 body {
     font-family: Arial, sans-serif;
   background-image: url("./image/weather.jpg");
-  text-align: center;
-  background-size: cover;
+   background-size: cover;
  background-repeat: no-repeat;
  background-position: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
   }
-.container{  
-margin-left: 34% ;
-margin-top:100px;
- border-radius: 20px;
+ 
+  .container {
+    justify-content: center;
+    margin-top: 100px;
+    border-radius: 20px;
     width: 400px;
-    border:2px solid #a03a12;
-    background-color: rgb(255, 255, 255);
+    border: 2px solid #a03a12;
+    background-image: url("/image/cld.jpg.jpg");
     height: 400px;
-}
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 .container h1 {
    padding-top: 50px;
     color: #060c5e;
@@ -24,8 +30,9 @@ h2{
     font-size: 25px;
 }
 p{
-    color: #060c5e;
+    color: #012501;
     font-size: 15px;
+    font-weight: bolder;
 }
 input {
     padding: 10px;

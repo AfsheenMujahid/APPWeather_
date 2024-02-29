@@ -15,8 +15,8 @@ body {
     border-radius: 20px;
     width: 400px;
     border: 2px solid #a03a12;
-    background-image: url("/image/cld.jpg.jpg");
-    height: 400px;
+    background-color: aliceblue;
+     height: 400px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
